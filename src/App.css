@@ -1,0 +1,21 @@
+/* Estilos mínimos para la primera clase (todavía sin Bootstrap). */
+
+
+.contenedor {
+  max-width: 720px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 0.08);
+  text-align: center;
+}
+
+h1 {
+  color: #1f3c88;
+}
+
+.pie {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
