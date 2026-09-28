@@ -2,7 +2,7 @@ import {Row,Col,Alert} from 'react-bootstrap'
 import TarjetaProducto from './TarjetaProducto.jsx'
 
 
-function Catalogo({productos}){
+function Catalogo({productos,agregarAlCarrito}){
 
     if(productos.length===0){
         return <Alert variant='warning'>No Hay productos para mostrar</Alert>
@@ -13,7 +13,7 @@ function Catalogo({productos}){
             {
                 productos.map((p)=> (
                         <Col key={p.id}>
-                            <TarjetaProducto producto={p}/>
+                            <TarjetaProducto producto={p} onAgregar={agregarAlCarrito}/>
                         </Col>
                     )
                 )

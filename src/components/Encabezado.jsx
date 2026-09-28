@@ -1,6 +1,9 @@
-import { Navbar, Nav, Container, Button } from 'react-bootstrap'
+import { Navbar, Nav, Container, Button, Badge } from 'react-bootstrap'
 
-function Encabezado() {
+
+function Encabezado({cantidad,onVerCarrito }) {
+
+    
 
     return (
         <>
@@ -15,7 +18,7 @@ function Encabezado() {
                             <Nav.Link href="#catalogo">Catálogo</Nav.Link>
                             <Nav.Link href="#contacto">Contacto</Nav.Link>
                         </Nav>
-                        <Button variant="outline-light">🛒 Carrito</Button>
+                        <Button onClick={onVerCarrito} variant="outline-light"> <Badge>{cantidad}</Badge> 🛒 Carrito</Button>
                     </Navbar.Collapse>
 
                 </Container>
